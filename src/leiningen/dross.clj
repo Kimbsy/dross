@@ -39,7 +39,7 @@ The command scans the `src` directory to find unused dependencies
 declared in `project.clj`.  It ignores dependencies specified in
 profiles or plugins and considers exclusions.
 
-Additionally, you can provide a `.dcignore.edn` file in the project
+Additionally, you can provide a `.drossignore.edn` file in the project
 root containing a vector of dependencies (qualified or unqualified
 symbols) that should be ignored in the scan.
 
@@ -72,7 +72,7 @@ Examples:
                        (println "Make sure the file exists and is properly formatted.")
                        (System/exit 1))))
 
-          ignore-path (str (:root project) "/.dcignore.edn")
+          ignore-path (str (:root project) "/.drossignore.edn")
           ignored-symbols (if (.exists (io/file ignore-path))
                             (edn/read-string (slurp ignore-path))
                             [])

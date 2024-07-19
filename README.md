@@ -14,7 +14,7 @@ profiles or plugins and considers exclusions.
 Add dross to your `project.clj` or `~/.lein/profiles.clj`:
 
 ```Clojure
-:plugins [[com.github.kimbsy/dross "1.0.0"]]
+:plugins [[com.github.kimbsy/dross "1.0.3"]]
 ```
 
 Usage:
@@ -29,6 +29,11 @@ Examples:
   lein dross :q
   lein dross --quiet
 
-You can provide a `.dcignore.edn` file in the project root containing
+You can provide a `.drossignore.edn` file in the project root containing
 a vector of dependencies (qualified or unqualified symbols) that
 should be ignored in the scan.
+
+``` Clojure
+[commons-io/commons-io
+ ring-middleware-format]
+```
