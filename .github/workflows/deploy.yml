@@ -1,0 +1,31 @@
+name: Deploy to Clojars
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'adopt'
+        java-version: '17'
+
+    - name: Install dependencies
+      run: lein deps
+
+    - name: Run tests
+      run: lein test
+
+    - name: Publish
+      env:
+        CLOJARS_USER: ${{ secrets.CLOJARS_USERNAME }}
+        CLOJARS_PASS: ${{ secrets.CLOJARS_PASSWORD }}
+      run: lein deploy clojars
