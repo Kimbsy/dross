@@ -44,16 +44,16 @@ root containing a vector of dependencies (qualified or unqualified
 symbols) that should be ignored in the scan.
 
 Usage:
-  lein depclean [options]
+  lein dross [options]
 
 Options:
   :q (or :quiet, -q, --quiet) Enable quiet mode, only outputting names
   of unused dependencies.
 
 Examples:
-  lein depclean
-  lein depclean :q
-  lein depclean --quiet"
+  lein dross
+  lein dross :q
+  lein dross --quiet"
   [project & args]
   (let [quiet? (some #{":q" ":quiet" "-q" "--quiet"} args)]
 

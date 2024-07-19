@@ -11,17 +11,23 @@ profiles or plugins and considers exclusions.
 
 ## Usage
 
+Add dross to your `project.clj` or `~/.lein/profiles.clj`:
+
+```Clojure
+:plugins [[com.github.kimbsy/dross "1.0.0"]]
+```
+
 Usage:
-  lein depclean [options]
+  lein dross [options]
 
 Options:
   :q (or :quiet, -q, --quiet) Enable quiet mode, only outputting names
   of unused dependencies.
 
 Examples:
-  lein depclean
-  lein depclean :q
-  lein depclean --quiet
+  lein dross
+  lein dross :q
+  lein dross --quiet
 
 You can provide a `.dcignore.edn` file in the project root containing
 a vector of dependencies (qualified or unqualified symbols) that
