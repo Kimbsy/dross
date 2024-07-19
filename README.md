@@ -1,5 +1,7 @@
 # dross
 
+[![Clojars Project](https://img.shields.io/clojars/v/com.github.kimbsy/dross.svg)](https://clojars.org/com.github.kimbsy/dross)
+
 A Leiningen plugin for checking a project for potentially unused
 dependencies. Helpful for sprucing up a legacy system.
 
