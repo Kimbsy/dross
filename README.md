@@ -14,7 +14,7 @@ profiles or plugins and considers exclusions.
 Add dross to your `project.clj` or `~/.lein/profiles.clj`:
 
 ```Clojure
-:plugins [[com.github.kimbsy/dross "1.0.3"]]
+:plugins [[com.github.kimbsy/dross "1.0.4"]]
 ```
 
 Usage:
