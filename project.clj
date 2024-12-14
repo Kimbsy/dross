@@ -1,5 +1,5 @@
-(defproject com.github.kimbsy/dross "1.0.5"
-  :description "DEPRECATED: A Leiningen plugin for identifying potentially unused dependencies."
+(defproject com.kimbsy/dross "1.0.6"
+  :description "A Leiningen plugin for identifying potentially unused dependencies."
   :url "https://github.com/Kimbsy/dross"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
             :url  "https://www.eclipse.org/legal/epl-2.0/"}
