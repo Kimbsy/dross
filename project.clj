@@ -1,4 +1,4 @@
-(defproject com.kimbsy/dross "1.0.6"
+(defproject com.kimbsy/dross "1.0.7"
   :description "A Leiningen plugin for identifying potentially unused dependencies."
   :url "https://github.com/Kimbsy/dross"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
